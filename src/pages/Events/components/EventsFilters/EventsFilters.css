@@ -1,0 +1,16 @@
+.events-filters {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+
+.events-filters > button {
+   cursor: pointer;
+   background: transparent;
+   color: #95E3FA;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   border: 0;
+   margin-left: auto;
+}

@@ -1,0 +1,27 @@
+.header {
+   display: flex;
+   align-items: center;
+   gap: 38px;
+   padding: 14px 0 10px;
+}
+
+.header > nav {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+}
+
+.header > nav a {
+   color: #95E3FACC;
+   text-decoration: none;
+}
+
+.header > nav a.active {
+   color: #fff;
+}
+
+.header > button {
+   margin-left: auto;
+   background: transparent;
+   border: 0;
+}

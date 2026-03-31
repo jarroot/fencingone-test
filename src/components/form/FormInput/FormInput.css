@@ -1,0 +1,22 @@
+.form-input {
+   display: flex;
+   align-items: center;
+   background: #022e37;
+   border-radius: 6px;
+   padding: 0 12px;
+   gap: 8px;
+}
+
+.form-input label {
+   color: #95E3FA8C;
+}
+
+.form-input input {
+   background: transparent;
+   color: white;
+   border: none;
+   min-height: 46px;
+   padding: 0;
+   flex: auto;
+   outline: none;
+}

@@ -1,0 +1,14 @@
+.page-layout {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+
+   max-width: 1440px;
+   padding: 0 21px;
+   margin: 0 auto;
+}
+
+.page-layout main {
+   flex: auto;
+   padding-bottom: 25px;
+}

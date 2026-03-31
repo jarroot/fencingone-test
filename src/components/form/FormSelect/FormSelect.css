@@ -1,0 +1,25 @@
+.form-select {
+   display: flex;
+   flex-direction: column;
+   background: #022e37;
+   min-height: 46px;
+   border-radius: 6px;
+   padding: 6px 12px;
+   gap: 2px;
+}
+
+.form-select label {
+   color: #95E3FACC;
+   font-size: 0.8em;
+}
+
+.form-select select {
+   background: transparent;
+   color: #fff;
+   outline: none;
+   border: 0;
+}
+
+.form-select select option {
+   background: #022e37;
+}

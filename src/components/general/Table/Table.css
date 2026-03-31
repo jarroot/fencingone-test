@@ -1,0 +1,58 @@
+.table {
+   border: 0;
+	border-collapse: collapse;
+   width: 100%;
+}
+
+.table thead th {
+   padding: 10px 5px;
+   color: #95E3FACC;
+   font-size: 0.75em;
+}
+
+.table tbody td {
+   padding: 10px 6px;
+   font-size: 0.95em;
+}
+
+.table tr {
+   border-bottom: 1px solid #7FDDFF33;
+}
+
+.table-td-column {
+   font-weight: bold;
+   display: none;
+}
+
+@media (max-width: 1100px) {
+   .table {
+      display: block;
+
+      thead { display: none; }
+
+      .table-td-column {
+         display: block;
+         font-weight: bold;
+         margin-bottom: 6px;
+      }
+
+      tbody, tfoot, tbody tr, tbody td {
+         display: block;
+      }
+
+      tbody {
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+      }
+
+      tbody td {
+         padding-left: 0;
+         padding-right: 0;
+      }
+
+      tbody tr {
+         border-bottom: 1px solid gray;
+     }
+   }
+}
