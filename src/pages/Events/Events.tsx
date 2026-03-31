@@ -47,8 +47,6 @@ export default function Events() {
       }, {} as {[ k: string ]: Event[]})
    }, [ events ])
 
-   console.log( grouped_events );
-
    return (
       <PageLayout>
 
@@ -58,7 +56,7 @@ export default function Events() {
             onReset={() => setParams( default_params )}
          />
 
-         { loading && <Loader/> }
+         { loading && <Loader height={200}/> }
 
          { !loading && error && 
             <p style={{ textAlign: "center" }}> { error } </p>
@@ -74,6 +72,7 @@ export default function Events() {
                   { label: "Возраст или год рождения", render: row => row.age || "-", width: 120, align: "center" },
                   { label: "Тип", render: row => row.type === 'I' ? "Личные" : "Командные" }
                ]}
+               data={ events }
                grouped={ grouped_events }
             />
          }

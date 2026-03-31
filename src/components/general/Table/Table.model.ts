@@ -8,6 +8,6 @@ export interface TableColumn<I> {
 
 export interface TableProps<I> {
    columns: TableColumn<I>[];
-   data?: I[] | null | undefined;
+   data: I[] | null | undefined;
    grouped?: {[ k: string ]: I[]} | null;
 }
