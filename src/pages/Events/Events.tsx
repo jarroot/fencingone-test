@@ -22,7 +22,7 @@ const default_params = {
    to: undefined
 } as GetEventsParams
 
-export default function Events() {
+function Events() {
 
    const [ params, setParams ] = useState( default_params );
 
@@ -48,8 +48,7 @@ export default function Events() {
    }, [ events ])
 
    return (
-      <PageLayout>
-
+      <>
          <EventsFilters
             params={ params }
             onChange={( n, v ) => setParams( p => ({...p, [n]: v }))}
@@ -76,6 +75,14 @@ export default function Events() {
                grouped={ grouped_events }
             />
          }
+      </>
+   )
+}
+
+export default function EventsPage() {
+   return (
+      <PageLayout>
+         <Events/>
       </PageLayout>
    )
 }
