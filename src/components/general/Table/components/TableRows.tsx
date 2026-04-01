@@ -1,5 +1,4 @@
 import { TableColumn } from "../Table.model";
-import TableCell from "./TableCell";
 
 export default function TableRows<I extends object>({ columns, data }: {
    columns: TableColumn<I>[];
@@ -16,6 +15,7 @@ export default function TableRows<I extends object>({ columns, data }: {
                   { columns.map(({ name, render }, i ) => {
                      
                      let content;
+                     const label = columns[i].label;
 
                      if ( render ) 
                         content = render( row ) 
@@ -25,11 +25,10 @@ export default function TableRows<I extends object>({ columns, data }: {
                      }
 
                      return (
-                        <TableCell 
-                           key={ i }
-                           label={ columns[i].label }
-                           content={ content }   
-                        />
+                        <td> 
+                           <div className="table-td-column"> { label } </div>
+                           { content }
+                        </td>
                      )
                   })}
                </tr>
