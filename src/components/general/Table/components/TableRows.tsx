@@ -25,7 +25,7 @@ export default function TableRows<I extends object>({ columns, data }: {
                      }
 
                      return (
-                        <td> 
+                        <td key={ name || i }>
                            <div className="table-td-column"> { label } </div>
                            { content }
                         </td>
