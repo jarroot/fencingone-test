@@ -1,14 +1,14 @@
 .form-input {
    display: flex;
    align-items: center;
-   background: #022e37;
+   background: var(--bg-color);
    border-radius: 6px;
    padding: 0 12px;
    gap: 8px;
 }
 
 .form-input label {
-   color: #95E3FA8C;
+   color: var(--turquoise);
 }
 
 .form-input input {

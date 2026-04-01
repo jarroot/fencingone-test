@@ -2,6 +2,13 @@
 	box-sizing: border-box !important;
 }
 
+:root {
+   --main-bg-color: #04171C;
+   --bg-color: #022e37;
+   --turquoise: #95E3FACC;
+   --white: #ffffff;
+}
+
 html, body {
    margin: 0;
    height: 100%;
@@ -15,6 +22,6 @@ body {
    margin: 0;
    font-size: 16px;
    font-family: "IBM Plex Sans", sans-serif;
-   background: #04171C;
-   color: #fff;
+   background: var(--main-bg-color);
+   color: var(--white);
 }

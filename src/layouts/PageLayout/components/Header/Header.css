@@ -12,12 +12,12 @@
 }
 
 .header > nav a {
-   color: #95E3FACC;
+   color: var(--turquoise);
    text-decoration: none;
 }
 
 .header > nav a.active {
-   color: #fff;
+   color: var(--white);
 }
 
 .header > button {
